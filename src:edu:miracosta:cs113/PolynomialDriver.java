@@ -1,7 +1,8 @@
 /**
 *PolynomialDriver.java
 *
-*The PolynomialDriver class allows the user to store, display, and manipulate two polynomials. The user can add or remove terms to each polynomial, clear a polynomial, or find the sum of the two polynomials.
+*The PolynomialDriver class allows the user to store, display, and manipulate two polynomials. The 
+*user can add or remove terms to each polynomial, clear a polynomial, or find the sum of the two polynomials.
 *
 *@author Katarina Cohen
 *@version 1.0
@@ -27,7 +28,8 @@ public class PolynomialDriver {
   }
 
   /**
-  *Displays the main menu for the driver program. User can select one of four options (1-4), and the menu responds accordingly by displaying the editPolynomial menu, displaying the sum, or exiting the program.
+  *Displays the main menu for the driver program. User can select one of four options (1-4), and the menu responds 
+  *accordingly by displaying the editPolynomial menu, displaying the sum, or exiting the program.
   */
   private static void menu() {
     int choice;
@@ -72,7 +74,8 @@ public class PolynomialDriver {
   }
 
   /**
-  *Displays the edit menu for each polynomial. User can select one of four options (1-4). User can add or remove a term from the polynomial, clear a polynomial, or return to the main menu.
+  *Displays the edit menu for each polynomial. User can select one of four options (1-4). User can add or remove 
+  *a term from the polynomial, clear a polynomial, or return to the main menu.
   */
   private static void editPolynomial(String poly, Polynomial polynomial) {
     int choice;
