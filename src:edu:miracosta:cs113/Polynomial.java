@@ -1,7 +1,10 @@
 /**
 *Polynomial.java
 *
-*The Polynomial class creates and stores a linked list of Terms for a given Polynomial object. Methods allow the user to add or remove terms from the linked list and clear the polynomial. Terms are ordered from highest exponent to lowest, and exponents are compared so that terms can be combined or properly added to the list.
+*The Polynomial class creates and stores a linked list of Terms for a given Polynomial object. 
+*Methods allow the user to add or remove terms from the linked list and clear the polynomial. 
+*Terms are ordered from highest exponent to lowest, and exponents are compared so that terms can 
+*be combined or properly added to the list.
 *
 *@author Katarina Cohen
 *@version 2.0
@@ -22,7 +25,9 @@ public class Polynomial extends Term {
   }
 
   /**
-  *Copy constructor creates an object of type Polynomial by initializing it with a Polynomial object that has been created previously, if this Polynomial is not null. Initializes terms and copies every Term from the Polynomial original.
+  *Copy constructor creates an object of type Polynomial by initializing it with a Polynomial object 
+  *that has been created previously, if this Polynomial is not null. Initializes terms and copies every 
+  *Term from the Polynomial original.
   *
   *@param original  the Polynomial object you want to copy from
   */
@@ -40,7 +45,9 @@ public class Polynomial extends Term {
   }
 
   /**
-  *Adds the entered term to a given polnomial. A new coefficient is calculated if the exponent matches that of a preexisting term. Method also makes sure terms are added in the correct order with highest exponents first.
+  *Adds the entered term to a given polnomial. A new coefficient is calculated if the exponent matches 
+  *that of a preexisting term. Method also makes sure terms are added in the correct order with highest 
+  *exponents first.
   *
   *@param newTerm  the Term you want to add to the polynomial 
   */
@@ -88,7 +95,7 @@ public class Polynomial extends Term {
         if (newTerm.compareTo(term) == 1) {
           terms.add(i, newTerm);
         }
-        //Else if newTerm exponent is equal to current term, add coefficients together and set as new term object at index of current term. If coefficent = 0, remove from list
+        //Else if newTerm exponent is equal to current term, add coefficients together
         else if (newTerm.compareTo(term) == 0) {
           newCoefficient = newTerm.getCoefficient() + term.getCoefficient();
         sumOfTerms.setAll(newCoefficient, newTerm.getExponent());
@@ -110,7 +117,7 @@ public class Polynomial extends Term {
       int finalIndex = this.getNumTerms() - 1;
       Term lastTerm = this.getTerm(finalIndex);
 
-      //If the new term has the same exponent as the last term, add coefficients and set as new term at that index. If coefficient = 0, remove from list.
+      //If the new term has the same exponent as the last term, add coefficients
       if (newTerm.compareTo(lastTerm) == 0) {
         newCoefficient = newTerm.getCoefficient() + lastTerm.getCoefficient();
         sumOfTerms.setAll(newCoefficient, newTerm.getExponent());
