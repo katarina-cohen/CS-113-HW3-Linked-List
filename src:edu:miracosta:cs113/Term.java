@@ -1,7 +1,10 @@
 /**
 *Term.java
 *
-*Stores the coefficient and exponent values for a given term. Coefficient and exponent can be entered as individual terms, or a string of the form 4x^2 can be parsed for these values. Class also implemements Comparable interface to compare exponents to one another (whether they are greater, lesser, or equal in value).
+*Stores the coefficient and exponent values for a given term. Coefficient and exponent can be 
+*entered as individual terms, or a string of the form 4x^2 can be parsed for these values. Class 
+*also implemements Comparable interface to compare exponents to one another (whether they are 
+*greater, lesser, or equal in value).
 *
 *@author Katarina Cohen
 *@version 2.0
@@ -70,7 +73,8 @@ public class Term implements Comparable<Term> {
   }
 
   /**
-  *Copy constructor creates an object of type Term by initializing it with a Term object that has been created previously, if this Term is not null.
+  *Copy constructor creates an object of type Term by initializing it with a Term object that has 
+  *been created previously, if this Term is not null.
   *
   *@param original  the Term object you want to copy from
   */
